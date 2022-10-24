@@ -1,0 +1,192 @@
+/* другорядний колір тексту #757575 
+/* основний колір тексту #212121 
+/* білий колір #FFFFFF 
+/* акцент #2196F3 
+/* колір контактів у футері rgba(255, 255, 255, 0.6);
+/* колір фону #FFFFFF */
+/* другорядний колір фону #2F303A */
+/* третій колір фону  #F5F4FA*/
+:root {
+  --primary-text-color: #212121;
+  --secound-text-collor: #757575;
+  --accent: #2196f3;
+  --main-background-color: #ffffff;
+  --secound-background-color: #2f303a;
+  --footer-color-contacts: rgba(255, 255, 255, 0.6);
+  --third-color-hero: #ffffff;
+  --third-background-color: #f5f4fa;
+}
+body {
+  background-color: var(--main-background-color);
+  color: var(--primary-text-color);
+  font-family: "Roboto", "Raleway", sans-serif;
+  font-size: 14px;
+}
+/* Стилі для списків та посиланнь */
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style-type: none;
+}
+/* Лого у хедері */
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-item {
+  color: var(--accent);
+}
+.logo-secound-item {
+  color: var(--primary-text-color);
+}
+/* Кнопки навігації */
+.navigation-site {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.navigation-site:hover,
+.navigation-site:focus {
+  color: var(--accent);
+}
+.contacts {
+  color: var(--secound-text-collor);
+  font-weight: 500;
+  line-height: 1.17;
+}
+.contacts:hover,
+.contacts:focus {
+  color: var(--accent);
+}
+/* Баннер */
+.hero {
+  background-color: var(--secound-background-color);
+}
+.title-hero {
+  color: var(--third-color-hero);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.button-hero {
+  cursor: pointer;
+  background-color: var(--accent);
+  color: var(--third-color-hero);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+/* Особливості */
+.features-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.features-text {
+  color: var(--secound-text-collor);
+  line-height: 1.71;
+}
+/* Проекти */
+.projects-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* Команда */
+.team {
+  background-color: var(--third-background-color);
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.teammate-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.teammate-profession {
+  color: var(--secound-text-collor);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* Футер */
+.basement {
+  background-color: var(--secound-background-color);
+}
+.address {
+  font-style: normal;
+}
+.basement .logo-secound-item {
+  color: var(--third-color-hero);
+}
+.adress-item-maps {
+  color: var(--third-color-hero);
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.adress-item {
+  color: var(--footer-color-contacts);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.adress-item-maps:hover,
+.adress-item-maps:focus,
+.adress-item:hover,
+.adress-item:focus {
+  color: var(--accent);
+}
+/* Портфоліо */
+.filters-button {
+  background-color: var(--third-background-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  color: var(--primary-text-color);
+}
+.filters-button:hover,
+.filters-button:focus {
+  background-color: var(--accent);
+  color: var(--third-color-hero);
+}
+.portolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.porfolio-text {
+  color: var(--secound-text-collor);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
