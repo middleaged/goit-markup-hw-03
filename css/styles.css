@@ -27,10 +27,13 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p,
+ul {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 /* Стилі для списків та посиланнь */
 .link {
   text-decoration: none;
@@ -44,16 +47,27 @@ h6 {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
+  justify-content: center;
   outline: 2px solid tomato;
 }
-
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.direction {
+  display: flex;
+}
 /* Лого у хедері */
 .logo {
+  display: inline-block;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  padding-left: 215px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .logo-item {
   color: var(--accent);
@@ -62,11 +76,17 @@ h6 {
   color: var(--primary-text-color);
 }
 /* Кнопки навігації */
+.navigation {
+  padding-left: 93px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .navigation-site {
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-right: 50px;
 }
 .navigation-site:hover,
 .navigation-site:focus {
@@ -85,6 +105,7 @@ h6 {
 .hero {
   background-color: var(--secound-background-color);
   text-align: center;
+  padding-top: 200px;
 }
 .title-hero {
   color: var(--third-color-hero);
@@ -107,9 +128,23 @@ h6 {
   line-height: 1.88;
   align-items: center;
   letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 9px, 31px;
+  min-width: 216px;
+  min-height: 50px;
+  margin-bottom: 200px;
+}
+.button-hero:hover,
+.button-hero:focus {
+  background-color: #188ce8;
 }
 /* Особливості */
+.features-list-item {
+  width: 270px;
+}
 .features-title {
+  margin-bottom: 10px;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -127,6 +162,7 @@ h6 {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 /* Команда */
 .team {
