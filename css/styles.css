@@ -22,6 +22,7 @@ body {
   font-family: "Roboto", "Raleway", sans-serif;
   font-size: 14px;
 }
+/* Стандартні речі */
 h1,
 h2,
 h3,
@@ -30,44 +31,46 @@ h5,
 h6,
 p,
 ul {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
 }
-
-/* Стилі для списків та посиланнь */
 .link {
   text-decoration: none;
 }
 .list {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
 .container {
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
-  justify-content: center;
-  outline: 2px solid tomato;
 }
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.direction {
-  display: flex;
-}
+/* ХЕДЕР */
 /* Лого у хедері */
+.header {
+  border: 1px solid #ececec;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
 .logo {
-  display: inline-block;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  padding-left: 215px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+}
+.logo {
+  margin-right: 93px;
 }
 .logo-item {
   color: var(--accent);
@@ -77,7 +80,11 @@ ul {
 }
 /* Кнопки навігації */
 .navigation {
-  padding-left: 93px;
+  display: flex;
+}
+.navigation-container {
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -85,17 +92,26 @@ ul {
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
-  letter-spacing: 0.02em;
-  padding-right: 50px;
+  margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .navigation-site:hover,
 .navigation-site:focus {
   color: var(--accent);
 }
+
+.navigation-contacts {
+  display: flex;
+  margin-left: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .contacts {
   color: var(--secound-text-collor);
   font-weight: 500;
   line-height: 1.17;
+  margin-right: 50px;
 }
 .contacts:hover,
 .contacts:focus {
@@ -104,21 +120,27 @@ ul {
 /* Баннер */
 .hero {
   background-color: var(--secound-background-color);
-  text-align: center;
   padding-top: 200px;
+  padding-bottom: 200px;
 }
+
 .title-hero {
   color: var(--third-color-hero);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+.title-hero {
   margin-bottom: 30px;
 }
+.button-container {
+  display: block;
+  margin: auto;
+}
 .button-hero {
-  display: inline-block;
   cursor: pointer;
   background-color: var(--accent);
   color: var(--third-color-hero);
@@ -126,30 +148,37 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  display: flex;
   align-items: center;
+  text-align: center;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  padding: 9px, 31px;
-  min-width: 216px;
-  min-height: 50px;
-  margin-bottom: 200px;
 }
 .button-hero:hover,
 .button-hero:focus {
   background-color: #188ce8;
 }
+.btn-text {
+  padding: 10px 32px;
+}
 /* Особливості */
-.features-list-item {
-  width: 270px;
+.features-container {
+  padding-bottom: 0;
+}
+.features-list-container {
+  display: flex;
+}
+.feature-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 .features-title {
-  margin-bottom: 10px;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .features-text {
   color: var(--secound-text-collor);
@@ -164,6 +193,12 @@ ul {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
+.list-container {
+  display: flex;
+}
+.list-item:not(:last-child) {
+  margin-right: 30px;
+}
 /* Команда */
 .team {
   background-color: var(--third-background-color);
@@ -174,27 +209,51 @@ ul {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 .teammate-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
+
+  margin-bottom: 10px;
 }
 .teammate-profession {
   color: var(--secound-text-collor);
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
+}
+.team-container {
+  display: flex;
+}
+.team-card {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-card:not(:last-child) {
+  margin-right: 30px;
+}
+.team-card-text {
+  padding: 30px 70px;
 }
 /* Футер */
 .basement {
   background-color: var(--secound-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.logo-basement {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
 .address {
   font-style: normal;
+  padding-top: 20px;
 }
 .basement .logo-secound-item {
   color: var(--third-color-hero);
@@ -204,6 +263,9 @@ ul {
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+.adress-list-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .adress-item {
   color: var(--footer-color-contacts);
@@ -216,7 +278,12 @@ ul {
 .adress-item:focus {
   color: var(--accent);
 }
+
 /* Портфоліо */
+.filters-container {
+  display: flex;
+  justify-content: center;
+}
 .filters-button {
   background-color: var(--third-background-color);
   font-family: inherit;
@@ -227,11 +294,59 @@ ul {
   letter-spacing: 0.03em;
   cursor: pointer;
   color: var(--primary-text-color);
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
+}
+.filters-button-one {
+  background-color: var(--third-background-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  color: var(--primary-text-color);
+  border-radius: 4px;
+  border: none;
+  padding: 6px 25px;
+}
+.filters-button-one:hover,
+.filters-button-one:focus {
+  background-color: var(--accent);
+  color: var(--third-color-hero);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .filters-button:hover,
 .filters-button:focus {
   background-color: var(--accent);
   color: var(--third-color-hero);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.filters-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+.portfolio {
+  padding-top: 34px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.porfolio-item {
+  margin-right: 30px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+.porfolio-item:nth-child(3n) {
+  margin-right: 0;
+}
+.porfolio-item:nth-child(n + 4) {
+  margin-top: 30px;
+}
+.text-container {
+  padding: 20px 24px;
 }
 .portolio-title {
   font-weight: 700;
