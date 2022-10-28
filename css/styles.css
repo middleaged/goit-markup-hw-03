@@ -44,8 +44,9 @@ ul {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -85,16 +86,19 @@ ul {
 .navigation-container {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .navigation-site {
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
-  margin-right: 50px;
+}
+.navigation-site-item {
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.navigation-site-item:not(:last-child) {
+  margin-right: 50px;
 }
 .navigation-site:hover,
 .navigation-site:focus {
@@ -104,13 +108,17 @@ ul {
 .navigation-contacts {
   display: flex;
   margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .contacts {
   color: var(--secound-text-collor);
   font-weight: 500;
   line-height: 1.17;
+}
+.contacts-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.contacts-item:not(:last-child) {
   margin-right: 50px;
 }
 .contacts:hover,
@@ -168,6 +176,9 @@ ul {
 }
 .features-list-container {
   display: flex;
+}
+.feature-list-item {
+  width: 270px;
 }
 .feature-list-item:not(:last-child) {
   margin-right: 30px;
@@ -237,7 +248,8 @@ ul {
   margin-right: 30px;
 }
 .team-card-text {
-  padding: 30px 70px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 /* Футер */
 .basement {
@@ -283,6 +295,7 @@ ul {
 .filters-container {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .filters-button {
   background-color: var(--third-background-color);
@@ -330,11 +343,11 @@ ul {
   margin-right: 8px;
 }
 .portfolio {
-  padding-top: 34px;
   display: flex;
   flex-wrap: wrap;
 }
 .porfolio-item {
+  width: 370px;
   margin-right: 30px;
   border: 1px solid #eeeeee;
   border-top: none;
